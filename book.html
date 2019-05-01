@@ -108,13 +108,13 @@ function myimg(p2){
   var j=p2;
 if(j>(lastnum-6)){j=lastnum-6;}
   if(j<1){j=0;} 
-  var mylink0='<a href=pages/mypage'+(j  )+'.html target="myframe" onclick="myimg1(j );">'+(j  )+"</a>";
-  var mylink1='<a href=pages/mypage'+(j+1)+'.html target="myframe" onclick="myimg1(j1);">'+(j+1)+"</a>";
-  var mylink2='<a href=pages/mypage'+(j+2)+'.html target="myframe" onclick="myimg1(j2);">'+(j+2)+"</a>";
-  var mylink3='<a href=pages/mypage'+(j+3)+'.html target="myframe" onclick="myimg1(j3);">'+(j+3)+"</a>";
-  var mylink4='<a href=pages/mypage'+(j+4)+'.html target="myframe" onclick="myimg1(j4);">'+(j+4)+"</a>";
-  var mylink5='<a href=pages/mypage'+(j+5)+'.html target="myframe" onclick="myimg1(j5);">'+(j+5)+"</a>";
-  var mylink6='<a href=pages/mypage'+(j+6)+'.html target="myframe" onclick="myimg1(j6);">'+(j+6)+"</a>";
+  var mylink0='<a href=pages/mypage'+(j  )+'.htm target="myframe" onclick="myimg1(j );">'+(j  )+"</a>";
+  var mylink1='<a href=pages/mypage'+(j+1)+'.htm target="myframe" onclick="myimg1(j1);">'+(j+1)+"</a>";
+  var mylink2='<a href=pages/mypage'+(j+2)+'.htm target="myframe" onclick="myimg1(j2);">'+(j+2)+"</a>";
+  var mylink3='<a href=pages/mypage'+(j+3)+'.htm target="myframe" onclick="myimg1(j3);">'+(j+3)+"</a>";
+  var mylink4='<a href=pages/mypage'+(j+4)+'.htm target="myframe" onclick="myimg1(j4);">'+(j+4)+"</a>";
+  var mylink5='<a href=pages/mypage'+(j+5)+'.htm target="myframe" onclick="myimg1(j5);">'+(j+5)+"</a>";
+  var mylink6='<a href=pages/mypage'+(j+6)+'.htm target="myframe" onclick="myimg1(j6);">'+(j+6)+"</a>";
  document.getElementById("td1").innerHTML=  mylink0; 
  document.getElementById("td2").innerHTML=  mylink1;
  document.getElementById("td3").innerHTML=  mylink2;
@@ -127,7 +127,7 @@ if(j>(lastnum-6)){j=lastnum-6;}
 function addpage(){
  if(i>lastnum){i=lastnum;}
 if(i<1){i=1;}
- mylinks="pages/mypage"+i+".html";
+ mylinks="pages/mypage"+i+".htm";
  document.getElementById("bnext").href = mylinks;
  document.getElementById("next1").href = mylinks;
  document.getElementById("top").innerHTML =  i ;
@@ -136,7 +136,7 @@ i++;}
 function subpage(){
 if(i<1){i=1;}
 i--;
- mylinks="pages/mypage"+i+".html";
+ mylinks="pages/mypage"+i+".htm";
  document.getElementById("bprev").href = mylinks;
  document.getElementById("prev1").href = mylinks;
 if(i !=0){
