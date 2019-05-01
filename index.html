@@ -33,17 +33,8 @@ li a:hover {
   <li><a href="guilty.html">in PDF</a></li>
 <li><a href="thebook.pdf" download="guilty.pdf">Download</a></li>
   <li><a href="#about">About</a></li>
-</ul><br><br><?php  
-$filename="tfile.txt";
-$fd = fopen ($filename, "r");
-$contents = fread ($fd, filesize($filename));  
-$contents=$contents+1;
-$fp = fopen ($filename, "w"); 
-fwrite ($fp,$contents);
-chmod($filename,0777);
-fclose ($fd);              
-echo $contents;
-  ?>
+</ul><br><br>  
+
 
 <font color="white"><h1>Why guilty?</h1>
 <table><tr><td><p>
